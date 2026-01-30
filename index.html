@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>抽奖转盘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <div class="wheel-container">
+    <div class="pointer">▲</div>
+    <canvas id="wheel" width="500" height="500"></canvas>
+  </div>
+
+  <div class="panel">
+    <select id="prizeSelect">
+      <option value="一等奖">一等奖</option>
+      <option value="二等奖">二等奖</option>
+      <option value="三等奖">三等奖</option>
+      <option value="四等奖">四等奖</option>
+    </select>
+
+    <button id="startBtn">开始抽奖</button>
+    <button id="stopBtn" disabled>停下</button>
+
+    <div id="result" class="result"></div>
+
+    <div id="history">
+      <div class="history-title">抽奖记录</div>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
